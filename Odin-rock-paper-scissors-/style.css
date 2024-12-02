@@ -1,0 +1,114 @@
+/* 
+    background : ECEBE4
+    borders : 685C6D
+    inside borders 151133
+    font color DADDD8
+*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: #DADDD8;
+    -webkit-text-stroke-color: #32297A ;
+    -webkit-text-stroke-width: 0.25px;
+    font-family:"IBM Plex Sans", sans-serif; ;
+}
+body{
+    background-color: #151133 ;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    margin: 15px 15px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #32297A;
+
+    border-radius: 15px;
+    padding: 10px 20px;
+    flex :1;
+    
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+        
+.players.container{
+    display: flex;
+    width: 100%;
+    border: none;
+    
+}
+.players{
+display: flex;
+justify-content: space-around;
+
+width: 70%;
+padding: 12px;
+flex-direction: row;
+
+margin: 0 15px;
+border-radius: 15px;
+
+}
+.player{
+    display: flex;
+	position: relative;
+    width: 100px;
+    height: 100px;
+	text-align: center;
+	border-radius: 50%;
+	overflow: hidden;
+    border: #7266CC solid 3px;
+    background-color: #32297A;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    
+
+}
+
+.select{
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    
+}
+.score{
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.challange{
+    border: #7266CC solid 2px;
+    background-color: #32297A;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.challange:hover{
+    background-color: #281c85;
+}
+
+
+img.emojione{
+    height: auto;
+    width: 50px;
+
+}
+
+span.emoji {
+    font-size:50px;
+   
+    line-height: 2;
+  }

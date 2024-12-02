@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>painting</title>
+    <link rel="styleSheet" href="style.css">
+</head>
+<body>
+    <h1>simple painting</h1>
+    <div class="tools">
+        
+        color 
+        <input type="color" class="color">
+
+        
+        <button onclick="reset()">reset</button>
+        <button onclick="eraser(this)">eraser</button>
+    </div>
+    <div id="container">
+        
+    </div>
+    <div id="secrets">
+        <p>grid size</p>
+        <p id="slider"></p>
+        <div class="slide"><input class="amount"type="range" min="16" max="128" step="16" value="16" onchange="changeValue(this)"><button onclick="load()">load</button></div>
+        <p>(ctrl + z) undo </p><br>
+        <p>(ctrl + y) do</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

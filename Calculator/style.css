@@ -1,0 +1,78 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Simple body styling */
+body {
+    font-family: Arial, sans-serif; /* Standard font */
+    background-color: #222; /* Dark background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* White text */
+}
+
+/* Header styling */
+.calculator-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f39c12; /* Bright orange header */
+}
+
+/* Display styling */
+#Display {
+    width: 220px;
+    height: 50px;
+    background-color: #333; /* Dark display background */
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 24px; /* Slightly larger text for display */
+    color: #fff; /* White display text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for the buttons */
+    gap: 10px;
+    width: 220px; /* Match display width */
+}
+
+/* Common button style */
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    background-color: #444; /* Dark grey for button background */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Smooth, rounded corners */
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #555; /* Slightly lighter grey on hover */
+}
+
+/* Special button colors */
+.btn-yellow {
+    background-color: #f39c12; /* Orange for operators */
+}
+
+.btn-clear {
+    background-color: #e74c3c; /* Red for clear button */
+}
+
+.btn-equal {
+    background-color: #27ae60; /* Green for equals button */
+    grid-column: span 4; /* Make the equals button span all 4 columns */
+}

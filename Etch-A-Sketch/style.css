@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+:root{
+
+    --mainColor:#000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Silkscreen", sans-serif;
+    color: aliceblue;
+}
+body{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    background-color: black;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#container{
+    
+    
+    display: flex;
+    width: 360px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+   flex-flow: row wrap;
+    border: red solid 2px;
+    padding: 0;
+    
+    
+}
+
+.paper{
+ 
+    background-color: aliceblue;
+    box-sizing: border-box;
+    touch-action: none;
+    user-select: none;
+    
+}
+
+/* .colored{
+    background-color: var(--mainColor);
+} */
+
+.tools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+button{
+    background: red;
+}
+
+
+.selected{
+    background-color: azure;
+    color: black;
+}
+#secrets{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slide{
+    display: flex;
+    gap :3px;
+}
